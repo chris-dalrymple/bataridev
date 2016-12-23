@@ -1,0 +1,6 @@
+*.asm
+*.bin
+*.h
+*.list.txt
+*.symbol.txt
+*.bB
