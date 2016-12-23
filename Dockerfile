@@ -7,6 +7,6 @@ RUN mkdir -p /app /batari
 RUN unzip /tmp/bB_Linux_binaries_version_1.0.zip /batari/ \
     && export db=$HOME/batari && export PATH=$PATH:$bB
 ADD . /app/
-WORKDIR /app
+WORKDIR /app/src
 RUN make
-CMD tar -czf - /app
+CMD tar -czf - /app/bin
