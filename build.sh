@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t bataridev -f Dockerfile .
-docker run bataridev
+/usr/bin/docker build -t bataridev -f Dockerfile .
+/usr/bin/docker run bataridev > build.tar.gz

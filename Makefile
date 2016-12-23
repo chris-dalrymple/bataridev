@@ -5,7 +5,7 @@ all: game
 devdir:
 	mkdir -p bin
 
-helloworld.bas.bin:	devdir clean
+helloworld.bas.bin:	clean devdir
 	cd src; $(BB) helloworld.bas
 
 game:	helloworld.bas.bin
