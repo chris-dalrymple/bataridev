@@ -5,3 +5,4 @@
 *.symbol.txt
 *.bB
 build.tar.gz
+/app

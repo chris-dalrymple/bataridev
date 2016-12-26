@@ -8,7 +8,13 @@ devdir:
 helloworld.bas.bin:	clean devdir
 	cd src; $(BB) helloworld.bas
 
-game:	helloworld.bas.bin
+helloplayer.bas.bin: clean devdir
+	cd src; $(BB) helloplayer.bas
+
+hellomissile.bas.bin: clean devdir
+	cd src; $(BB) hellomissile.bas
+
+game:	helloworld.bas.bin helloplayer.bas.bin hellomissile.bas.bin
 	cp src/*.bin bin/
 
 clean:
